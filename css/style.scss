@@ -1,0 +1,124 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+@import url(https://fonts.google.com/specimen/Shrikhand);
+
+@media (max-width: 375px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+  }
+  .logo {
+    text-align: center;
+    img#logo {
+      width: 55%;
+      margin: 10px;
+      padding: 5px;
+    }
+    #location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lightgrey;
+      height: 60px;
+      font-size: 12px;
+      margin-left: -30px;
+      i.fas.fa-map-marker-alt {
+        margin: 5px;
+        margin-right: 25px;
+        font-size: 25px;
+      }
+    }
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    margin-left: 15px;
+    .nav-links {
+      margin-bottom: 15px;
+      display: block;
+      width: 360px;
+      a {
+        box-shadow: -1px 2px 9px -4px;
+        border-radius: 30px;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        height: 20px;
+        text-decoration: none;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  button.explorez-bt {
+    border-radius: 40px;
+    width: 300px;
+    height: 70px;
+    background-image: linear-gradient(#ff79da 0%, #9356dc 51%);
+    color: white;
+    margin: 25px;
+  }
+
+  main {
+    background-color: lightgrey;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    margin-left: 40px;
+    font-size: 18px;
+  }
+  .nav-icon-number {
+    margin-left: -45px;
+    margin-right: 25px;
+    font-size: 26px;
+    background-color: violet;
+    border-radius: 25px;
+    text-align: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    height: 30px;
+    width: 30px;
+  }
+  .cartes {
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  .carte-restaurant {
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+    .buttom {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      .partie-gauche {
+        margin-left: 10px;
+        .title {
+          font-weight: bold;
+        }
+      }
+    }
+
+    img.carte-img {
+      width: 100%;
+      border-radius: 20px 20px 0 0px;
+    }
+  }
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #383838;
+    .logo-bas {
+      font-family: "Shrikhand", sans-serif;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
