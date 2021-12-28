@@ -1,124 +1,148 @@
 @import url(https://fonts.google.com/specimen/Roboto);
 @import url(https://fonts.google.com/specimen/Shrikhand);
 
-@media (max-width: 375px) {
-  body {
-    font-family: "Roboto", sans-serif;
-    margin: 0px;
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+.logo {
+  text-align: center;
+  img#logo {
+    width: 55%;
+    margin: 10px;
+    padding: 5px;
   }
-  .logo {
-    text-align: center;
-    img#logo {
-      width: 55%;
-      margin: 10px;
-      padding: 5px;
-    }
-    #location {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: lightgrey;
-      height: 60px;
-      font-size: 12px;
-      margin-left: -30px;
-      i.fas.fa-map-marker-alt {
-        margin: 5px;
-        margin-right: 25px;
-        font-size: 25px;
-      }
-    }
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    margin-left: 15px;
-    .nav-links {
-      margin-bottom: 15px;
-      display: block;
-      width: 360px;
-      a {
-        box-shadow: -1px 2px 9px -4px;
-        border-radius: 30px;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        margin: 15px;
-        height: 20px;
-        text-decoration: none;
-        margin-bottom: 30px;
-      }
-    }
-  }
-  button.explorez-bt {
-    border-radius: 40px;
-    width: 300px;
-    height: 70px;
-    background-image: linear-gradient(#ff79da 0%, #9356dc 51%);
-    color: white;
-    margin: 25px;
-  }
-
-  main {
-    background-color: lightgrey;
+  .banner {
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-  .text {
-    margin-left: 40px;
-    font-size: 18px;
-  }
-  .nav-icon-number {
-    margin-left: -45px;
-    margin-right: 25px;
-    font-size: 26px;
-    background-color: violet;
-    border-radius: 25px;
-    text-align: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    height: 30px;
-    width: 30px;
-  }
-  .cartes {
-    a {
-      text-decoration: none;
-      color: inherit;
+    background-color: #f3f3f3;
+    h1 {
+      font-size: 26px;
+    }
+    h3 {
+      font-weight: 200;
+      font-size: 16px;
+      color: darkgrey;
     }
   }
-  .carte-restaurant {
-    background-color: white;
-    border-radius: 20px;
-    margin-bottom: 30px;
+  #location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e5e5;
+    height: 60px;
+    font-size: 12px;
+    margin-left: -30px;
+    i.fas.fa-map-marker-alt {
+      margin: 5px;
+      margin-right: 25px;
+      font-size: 25px;
+    }
+  }
+}
 
-    .buttom {
+.nav {
+  flex-wrap: wrap;
+  margin-left: 15px;
+  margin-top: 50px;
+  h1 {
+    font-size: 24px;
+  }
+  .nav-links {
+    margin-bottom: 15px;
+    display: block;
+    width: 360px;
+    a {
+      box-shadow: -1px 2px 9px -4px darkgrey;
+      border-radius: 30px;
+      padding: 30px;
       display: flex;
-      justify-content: space-between;
-      margin: 10px;
-      .partie-gauche {
-        margin-left: 10px;
-        .title {
-          font-weight: bold;
-        }
+      flex-direction: row;
+      margin: 16px;
+      height: 20px;
+      text-decoration: none;
+      margin-bottom: 30px;
+      background-color: #f3f3f3;
+      &:hover {
+        background-color: #ddd0ed;
+      }
+      .nav-icon-number {
+        margin-left: -45px;
+        margin-right: 20px;
+        background-color: #9356dc;
+        border-radius: 25px;
+        text-align: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        height: 24px;
+        width: 24px;
+        color: white;
+        font-size: larger;
       }
     }
+  }
+}
+.text {
+  margin-left: 30px;
+  font-size: 18px;
+  color: black;
+}
+button.explorez-bt {
+  border-radius: 40px;
+  width: 250px;
+  height: 70px;
+  background-image: linear-gradient(#ff79da 0%, #9356dc 51%);
+  color: white;
+  margin: 25px;
+  border: none;
+  box-shadow: 5px 5px 15px 0px grey;
+  font-size: large;
+}
 
-    img.carte-img {
-      width: 100%;
-      border-radius: 20px 20px 0 0px;
+main {
+  background-color: #f3f3f3;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartes {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.carte-restaurant {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+
+  .buttom {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    .partie-gauche {
+      margin-left: 10px;
+      .title {
+        font-weight: bold;
+      }
     }
   }
-  footer {
-    padding: 20px;
+
+  img.carte-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0px;
+  }
+}
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #383838;
+  .logo-bas {
+    font-family: "Shrikhand", sans-serif;
+  }
+  a {
+    text-decoration: none;
     color: white;
-    background-color: #383838;
-    .logo-bas {
-      font-family: "Shrikhand", sans-serif;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-    }
   }
 }
