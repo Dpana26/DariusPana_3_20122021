@@ -22,7 +22,12 @@ body {
     margin-bottom: 10px;
   }
 }
-
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
 img {
   width: 100%;
 }

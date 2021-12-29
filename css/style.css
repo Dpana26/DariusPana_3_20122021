@@ -1,7 +1,7 @@
 @import url(https://fonts.google.com/specimen/Roboto);
 @import url(https://fonts.google.com/specimen/Shrikhand);
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0px;
 }
 
@@ -179,6 +179,8 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
