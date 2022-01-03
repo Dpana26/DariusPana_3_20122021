@@ -3,38 +3,160 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
+  background-color: #f3f3f3;
 }
 
 .logo-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: white;
+}
+
+.logo-icon .fa-arrow-left {
+  position: relative;
+  margin-right: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  right: -30px;
 }
 
 .logo-icon img#logo {
   width: 50%;
-  margin: 10px;
-  padding: 5px;
-  margin-bottom: 5px;
+  margin: 12px;
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
 img {
-  width: 60%;
+  width: 100%;
 }
 
 main {
-  background-color: lightgray;
+  background-color: #f3f3f3;
+  position: relative;
+  bottom: 45px;
+  border-radius: 30px 30px 0px 0px;
+  padding-bottom: 20px;
 }
 
-main .left-side {
+main .entrees,
+main .plats,
+main .desserts {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+main .entrees .titre-section,
+main .plats .titre-section,
+main .desserts .titre-section {
+  margin-left: 20px;
+}
+
+main .entrees hr,
+main .plats hr,
+main .desserts hr {
+  width: 40px;
+  color: #99e2d0;
+  border-top: 4px solid #99e2d0;
+  float: left;
+  margin-left: 20px;
+  position: absolute;
+  border-left: none;
+}
+
+main .entrees li,
+main .plats li,
+main .desserts li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: white;
-  border-radius: 25px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+main .entrees li .left-side h3,
+main .entrees li .left-side p,
+main .plats li .left-side h3,
+main .plats li .left-side p,
+main .desserts li .left-side h3,
+main .desserts li .left-side p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  margin: 5px;
+}
+
+main .entrees li .left-side p,
+main .plats li .left-side p,
+main .desserts li .left-side p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 270px;
+}
+
+main .entrees li span,
+main .plats li span,
+main .desserts li span {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin: 5px;
+}
+
+main .restaurant-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .restaurant-title i.far.fa-heart {
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .btn-commander {
+  text-align: center;
+}
+
+main .btn-commander button {
+  border-radius: 40px;
+  width: 250px;
+  height: 70px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(51%, #9356dc));
+  background-image: linear-gradient(#ff79da 0%, #9356dc 51%);
+  color: white;
+  margin: 25px;
+  border: none;
+  -webkit-box-shadow: 5px 5px 15px 0px grey;
+          box-shadow: 5px 5px 15px 0px grey;
+  font-size: larger;
+}
+
+main .btn-commander button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3b1e1), color-stop(51%, #a482cd));
+  background-image: linear-gradient(#f3b1e1 0%, #a482cd 51%);
 }
 
 footer {
   padding: 20px;
   color: white;
   background-color: #383838;
+  position: relative;
 }
 
 footer .logo-bas {

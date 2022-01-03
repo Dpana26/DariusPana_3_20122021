@@ -127,6 +127,11 @@ button.explorez-bt {
   font-size: large;
 }
 
+button.explorez-bt:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3b1e1), color-stop(51%, #a482cd));
+  background-image: linear-gradient(#f3b1e1 0%, #a482cd 51%);
+}
+
 main {
   background-color: #f3f3f3;
   padding: 24px;
@@ -171,6 +176,9 @@ main {
 .carte-restaurant img.carte-img {
   width: 100%;
   border-radius: 20px 20px 0 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 260px;
 }
 
 footer {

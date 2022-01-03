@@ -4,26 +4,104 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
+  background-color: #f3f3f3;
 }
 .logo-icon {
   display: flex;
-
+  background-color: white;
+  .fa-arrow-left {
+    position: relative;
+    margin-right: 50px;
+    align-self: center;
+    right: -30px;
+  }
   img#logo {
     width: 50%;
-    margin: 10px;
-    padding: 5px;
-    margin-bottom: 5px;
+    margin: 12px;
+    padding: 8px;
+    margin-bottom: 10px;
   }
 }
 
 img {
-  width: 60%;
+  width: 100%;
 }
+
 main {
-  background-color: lightgray;
-  .left-side {
-    background-color: white;
-    border-radius: 25px;
+  background-color: #f3f3f3;
+  position: relative;
+  bottom: 45px;
+  border-radius: 30px 30px 0px 0px;
+
+  padding-bottom: 20px;
+  .entrees,
+  .plats,
+  .desserts {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    .titre-section {
+      margin-left: 20px;
+    }
+    hr {
+      width: 40px;
+      color: #99e2d0;
+      border-top: 4px solid #99e2d0;
+      float: left;
+      margin-left: 20px;
+      position: absolute;
+      border-left: none;
+    }
+    li {
+      display: flex;
+      margin: 20px;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px;
+      border-radius: 20px;
+      .left-side {
+        h3,
+        p {
+          margin-block-start: 0;
+          margin-block-end: 0;
+          margin: 5px;
+        }
+        p {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 270px;
+        }
+      }
+      span {
+        align-self: end;
+        margin: 5px;
+      }
+    }
+  }
+  .restaurant-title {
+    display: flex;
+    justify-content: space-evenly;
+    i.far.fa-heart {
+      position: relative;
+      align-self: center;
+    }
+  }
+  .btn-commander {
+    text-align: center;
+    button {
+      border-radius: 40px;
+      width: 250px;
+      height: 70px;
+      background-image: linear-gradient(#ff79da 0%, #9356dc 51%);
+      color: white;
+      margin: 25px;
+      border: none;
+      box-shadow: 5px 5px 15px 0px grey;
+      font-size: larger;
+      &:hover {
+        background-image: linear-gradient(#f3b1e1 0%, #a482cd 51%);
+      }
+    }
   }
 }
 
@@ -31,6 +109,8 @@ footer {
   padding: 20px;
   color: white;
   background-color: #383838;
+  position: relative;
+
   .logo-bas {
     font-family: "Shrikhand", sans-serif;
   }
