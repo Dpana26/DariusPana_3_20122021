@@ -50,30 +50,26 @@ main {
   padding-bottom: 20px;
 }
 
+main .titre-section {
+  margin-left: 25px;
+}
+
+main hr {
+  width: 40px;
+  color: #99e2d0;
+  border-top: 4px solid #99e2d0;
+  float: left;
+  margin-left: 25px;
+  position: absolute;
+  border-left: none;
+}
+
 main .entrees,
 main .plats,
 main .desserts {
   list-style-type: none;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
-}
-
-main .entrees .titre-section,
-main .plats .titre-section,
-main .desserts .titre-section {
-  margin-left: 20px;
-}
-
-main .entrees hr,
-main .plats hr,
-main .desserts hr {
-  width: 40px;
-  color: #99e2d0;
-  border-top: 4px solid #99e2d0;
-  float: left;
-  margin-left: 20px;
-  position: absolute;
-  border-left: none;
 }
 
 main .entrees li,
@@ -89,6 +85,11 @@ main .desserts li {
   background-color: white;
   padding: 10px;
   border-radius: 20px;
+  opacity: 0;
+  -webkit-animation: fadeIn 2s 1;
+          animation: fadeIn 2s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 main .entrees li .left-side h3,
@@ -120,6 +121,27 @@ main .desserts li span {
       -ms-grid-row-align: end;
       align-self: end;
   margin: 5px;
+}
+
+main .entrees li:nth-child(3n + 1),
+main .plats li:nth-child(3n + 1),
+main .desserts li:nth-child(3n + 1) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+main .entrees li:nth-child(3n + 2),
+main .plats li:nth-child(3n + 2),
+main .desserts li:nth-child(3n + 2) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+main .entrees li:nth-child(3n + 3),
+main .plats li:nth-child(3n + 3),
+main .desserts li:nth-child(3n + 3) {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 
 main .restaurant-title {

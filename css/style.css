@@ -179,8 +179,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   height: 260px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 footer {
