@@ -130,6 +130,8 @@ button.explorez-bt {
 button.explorez-bt:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f3b1e1), color-stop(51%, #a482cd));
   background-image: linear-gradient(#f3b1e1 0%, #a482cd 51%);
+  -webkit-box-shadow: 5px 5px 15px 0px #141414;
+          box-shadow: 5px 5px 15px 0px #141414;
 }
 
 main {
@@ -144,6 +146,43 @@ main {
           flex-direction: column;
 }
 
+main .loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #f390ee;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 3s linear;
+          animation: spin 3s linear;
+  opacity: 3;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
 .cartes a {
   text-decoration: none;
   color: inherit;
@@ -155,6 +194,18 @@ main {
   margin-bottom: 30px;
 }
 
+.carte-restaurant .nouvelle-etiquette {
+  background-color: turquoise;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  position: absolute;
+  margin: 25px;
+  border-radius: 2px;
+  color: darkgreen;
+}
+
 .carte-restaurant .buttom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,6 +214,33 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 10px;
+}
+
+.carte-restaurant .buttom i.far.fa-heart {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 10px;
+  font-size: x-large;
+  margin-right: 15px;
+  opacity: 0.5;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.carte-restaurant .buttom .far.fa-heart:hover {
+  font-weight: 900;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 15px;
+  font-size: x-large;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(#ff79da 0%, #9356dc 51%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
 }
 
 .carte-restaurant .buttom .partie-gauche {

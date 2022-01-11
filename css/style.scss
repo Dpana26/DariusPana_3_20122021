@@ -99,6 +99,7 @@ button.explorez-bt {
   font-size: large;
   &:hover {
     background-image: linear-gradient(#f3b1e1 0%, #a482cd 51%);
+    box-shadow: 5px 5px 15px 0px rgb(20, 20, 20);
   }
 }
 
@@ -107,6 +108,25 @@ main {
   padding: 24px;
   display: flex;
   flex-direction: column;
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #f390ee;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear;
+    opacity: 3;
+    animation-duration: 2s;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
 }
 
 .cartes {
@@ -119,11 +139,41 @@ main {
   background-color: white;
   border-radius: 20px;
   margin-bottom: 30px;
+  .nouvelle-etiquette {
+    background-color: turquoise;
+    width: fit-content;
+    padding: 10px 20px;
+    position: absolute;
+    margin: 25px;
+    border-radius: 2px;
+    color: darkgreen;
+  }
 
   .buttom {
     display: flex;
     justify-content: space-between;
     margin: 10px;
+
+    i.far.fa-heart {
+      align-self: center;
+      padding-bottom: 10px;
+      font-size: x-large;
+      margin-right: 15px;
+      opacity: 0.5;
+      transition: 0.6s;
+    }
+    .far.fa-heart:hover {
+      font-weight: 900;
+      align-self: center;
+      margin-right: 15px;
+      font-size: x-large;
+      padding-bottom: 10px;
+      cursor: pointer;
+      background: -webkit-linear-gradient(#ff79da 0%, #9356dc 51%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+    }
     .partie-gauche {
       margin-left: 10px;
       .title {
