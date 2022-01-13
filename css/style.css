@@ -5,6 +5,51 @@ body {
   margin: 0px;
 }
 
+.loader-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader-wrap .loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #f390ee;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 3s linear forwards;
+          animation: spin 3s linear forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
 .logo {
   text-align: center;
 }
@@ -52,24 +97,24 @@ body {
   font-size: 25px;
 }
 
-.nav {
+nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 15px;
   margin-top: 50px;
 }
 
-.nav h1 {
+nav h1 {
   font-size: 24px;
 }
 
-.nav .nav-links {
+nav .nav-links {
   margin-bottom: 15px;
   display: block;
   width: 360px;
 }
 
-.nav .nav-links a {
+nav .nav-links a {
   -webkit-box-shadow: -1px 2px 9px -4px darkgrey;
           box-shadow: -1px 2px 9px -4px darkgrey;
   border-radius: 30px;
@@ -88,11 +133,11 @@ body {
   background-color: #f3f3f3;
 }
 
-.nav .nav-links a:hover {
-  background-color: #ddd0ed;
+nav .nav-links a:hover {
+  background-color: #ffffff;
 }
 
-.nav .nav-links a .nav-icon-number {
+nav .nav-links a .nav-icon-number {
   margin-left: -45px;
   margin-right: 20px;
   background-color: #9356dc;
@@ -146,43 +191,6 @@ main {
           flex-direction: column;
 }
 
-main .loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #f390ee;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 3s linear;
-          animation: spin 3s linear;
-  opacity: 3;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    opacity: 0;
-  }
-}
-
 .cartes a {
   text-decoration: none;
   color: inherit;
@@ -195,7 +203,7 @@ main .loader {
 }
 
 .carte-restaurant .nouvelle-etiquette {
-  background-color: turquoise;
+  background-color: #99e2d0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;

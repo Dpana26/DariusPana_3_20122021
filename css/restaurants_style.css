@@ -84,7 +84,7 @@ main .desserts li {
           justify-content: space-between;
   background-color: white;
   border-radius: 20px;
-  opacity: 0;
+  opacity: 1;
   -webkit-animation: fadeIn 2s 1;
           animation: fadeIn 2s 1;
   -webkit-animation-fill-mode: forwards;
