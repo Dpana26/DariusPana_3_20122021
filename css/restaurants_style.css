@@ -126,9 +126,10 @@ main .desserts li .left-side p {
 main .entrees li .add-btn,
 main .plats li .add-btn,
 main .desserts li .add-btn {
-  display: none;
   background: turquoise;
-  width: 60px;
+  width: 0px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
   border-radius: 0 20px 20px 0;
   text-align: center;
 }
@@ -136,9 +137,7 @@ main .desserts li .add-btn {
 main .entrees li .add-btn i.fas.fa-check-circle,
 main .plats li .add-btn i.fas.fa-check-circle,
 main .desserts li .add-btn i.fas.fa-check-circle {
-  margin-top: 42%;
-  color: white;
-  font-size: x-large;
+  display: none;
 }
 
 main .entrees li span,
@@ -151,43 +150,66 @@ main .desserts li span {
   margin-right: 20px;
 }
 
-main .entrees li:nth-child(3n + 1),
-main .plats li:nth-child(3n + 1),
-main .desserts li:nth-child(3n + 1) {
+main .entrees li:nth-child(4n + 1),
+main .plats li:nth-child(4n + 1),
+main .desserts li:nth-child(4n + 1) {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 
-main .entrees li:nth-child(3n + 2),
-main .plats li:nth-child(3n + 2),
-main .desserts li:nth-child(3n + 2) {
+main .entrees li:nth-child(4n + 2),
+main .plats li:nth-child(4n + 2),
+main .desserts li:nth-child(4n + 2) {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 
-main .entrees li:nth-child(3n + 3),
-main .plats li:nth-child(3n + 3),
-main .desserts li:nth-child(3n + 3) {
+main .entrees li:nth-child(4n + 3),
+main .plats li:nth-child(4n + 3),
+main .desserts li:nth-child(4n + 3) {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 
-main .entrees li:nth-child(3n + 1):hover .add-btn,
-main .plats li:nth-child(3n + 1):hover .add-btn,
-main .desserts li:nth-child(3n + 1):hover .add-btn {
-  display: initial;
+main .entrees li:nth-child(4n + 4),
+main .plats li:nth-child(4n + 4),
+main .desserts li:nth-child(4n + 4) {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 
-main .entrees li:nth-child(3n + 2):hover .add-btn,
-main .plats li:nth-child(3n + 2):hover .add-btn,
-main .desserts li:nth-child(3n + 2):hover .add-btn {
+main .entrees li:nth-child(4n + 1):hover .add-btn,
+main .entrees li:nth-child(4n + 2):hover .add-btn,
+main .entrees li:nth-child(4n + 3):hover .add-btn,
+main .entrees li:nth-child(4n + 4):hover .add-btn,
+main .plats li:nth-child(4n + 1):hover .add-btn,
+main .plats li:nth-child(4n + 2):hover .add-btn,
+main .plats li:nth-child(4n + 3):hover .add-btn,
+main .plats li:nth-child(4n + 4):hover .add-btn,
+main .desserts li:nth-child(4n + 1):hover .add-btn,
+main .desserts li:nth-child(4n + 2):hover .add-btn,
+main .desserts li:nth-child(4n + 3):hover .add-btn,
+main .desserts li:nth-child(4n + 4):hover .add-btn {
   display: initial;
+  width: 60px;
 }
 
-main .entrees li:nth-child(3n + 3):hover .add-btn,
-main .plats li:nth-child(3n + 3):hover .add-btn,
-main .desserts li:nth-child(3n + 3):hover .add-btn {
-  display: initial;
+main .entrees li:nth-child(4n + 1):hover .add-btn i.fas.fa-check-circle,
+main .entrees li:nth-child(4n + 2):hover .add-btn i.fas.fa-check-circle,
+main .entrees li:nth-child(4n + 3):hover .add-btn i.fas.fa-check-circle,
+main .entrees li:nth-child(4n + 4):hover .add-btn i.fas.fa-check-circle,
+main .plats li:nth-child(4n + 1):hover .add-btn i.fas.fa-check-circle,
+main .plats li:nth-child(4n + 2):hover .add-btn i.fas.fa-check-circle,
+main .plats li:nth-child(4n + 3):hover .add-btn i.fas.fa-check-circle,
+main .plats li:nth-child(4n + 4):hover .add-btn i.fas.fa-check-circle,
+main .desserts li:nth-child(4n + 1):hover .add-btn i.fas.fa-check-circle,
+main .desserts li:nth-child(4n + 2):hover .add-btn i.fas.fa-check-circle,
+main .desserts li:nth-child(4n + 3):hover .add-btn i.fas.fa-check-circle,
+main .desserts li:nth-child(4n + 4):hover .add-btn i.fas.fa-check-circle {
+  display: inherit;
+  margin-top: 42%;
+  color: white;
+  font-size: x-large;
 }
 
 main .restaurant-title {

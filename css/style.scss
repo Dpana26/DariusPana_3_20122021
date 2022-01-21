@@ -23,7 +23,9 @@ body {
     }
     100% {
       transform: rotate(360deg);
-      opacity: 0;
+      visibility: hidden;
+      width: 0;
+      height: 0;
     }
   }
 }
@@ -151,6 +153,7 @@ main {
     margin: 25px;
     border-radius: 2px;
     color: darkgreen;
+    right: 20px;
   }
 
   .buttom {
