@@ -9,18 +9,26 @@ body {
 .logo-icon {
   display: flex;
   background-color: white;
-  .fa-arrow-left {
-    position: relative;
-    margin-right: 50px;
-    align-self: center;
-    right: -30px;
-  }
-  img#logo {
-    width: 50%;
-    margin: 12px;
-    padding: 8px;
-    margin-bottom: 10px;
-  }
+  a{
+    .fa-arrow-left {
+        position: relative;
+        margin-right: 50px;
+        align-self: center;
+        right: -30px;
+    text-decoration: none;
+    color: initial;
+        top: 45%;
+    font-size: x-large;
+      }
+      }
+    img#logo {
+      width: 50%;
+      margin: 12px;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+  
+  
 }
 .header-logo {
   display: -webkit-box;
@@ -28,8 +36,10 @@ body {
   display: flex;
   justify-content: center;
 }
-img {
+.img-restaurant img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 main {
@@ -93,7 +103,9 @@ main {
         border-radius: 0 20px 20px 0;
         text-align: center;
         i.fas.fa-check-circle {
+          margin-top: 42%;
           display: none;
+          
         }
       }
       span {
@@ -133,7 +145,17 @@ main {
           margin-top: 42%;
           color: white;
           font-size: x-large;
+          animation: spin 0.5s linear forwards;
         }
+        @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+      
+    }
+  }
       }
     }
   }
@@ -141,10 +163,27 @@ main {
   .restaurant-title {
     display: flex;
     justify-content: space-evenly;
-    i.far.fa-heart {
-      position: relative;
+  
+     i.far.fa-heart {
+       position: relative;
       align-self: center;
+      padding-bottom: 10px;
       font-size: x-large;
+      margin-right: 15px;
+      opacity: 0.5;
+      transition: 0.6s;
+    }
+    .far.fa-heart:hover {
+      font-weight: 900;
+      align-self: center;
+      margin-right: 15px;
+      font-size: x-large;
+      padding-bottom: 10px;
+      cursor: pointer;
+      background: -webkit-linear-gradient(#ff79da 0%, #9356dc 51%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
     }
   }
   .btn-commander {
@@ -172,12 +211,14 @@ footer {
   color: white;
   background-color: #383838;
   position: relative;
-
-  .logo-bas {
+  h2 {
     font-family: "Shrikhand", sans-serif;
+    font-size: larger;
   }
   a {
     text-decoration: none;
     color: white;
   }
 }
+
+

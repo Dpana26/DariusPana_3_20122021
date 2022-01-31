@@ -6,29 +6,52 @@ body {
   margin: 0px;
 }
 .loader-wrap {
-  display: flex;
-  justify-content: center;
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loader2 3000ms forwards;
+
+    @keyframes loader2 {
+        from {
+            z-index: 9999;
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        to {
+            z-index: -1;
+            opacity: 0;
+        }
+    }
+
   .loader {
     border: 16px solid #f3f3f3;
     border-top: 16px solid #f390ee;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 3s linear forwards;
-    animation-duration: 3s;
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
+    height: 100px;
+    width: 100px;
+    margin-bottom: 50%;
+    margin-top: 50%;
+        background: white;
+        animation: loader-spinner 1000ms linear 3;
+
+        @keyframes loader-spinner {
+            from {
+                transform: rotate(0);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
     }
-    100% {
-      transform: rotate(360deg);
-      visibility: hidden;
-      width: 0;
-      height: 0;
-    }
-  }
 }
+
+
 
 .logo {
   text-align: center;
@@ -201,11 +224,18 @@ footer {
   padding: 20px;
   color: white;
   background-color: #383838;
-  .logo-bas {
+  h2 {
     font-family: "Shrikhand", sans-serif;
+    font-size: larger;
   }
   a {
     text-decoration: none;
     color: white;
   }
 }
+@media only screen and (min-width: 820px) {
+  nav .nav-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}}
