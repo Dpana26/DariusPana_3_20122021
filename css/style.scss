@@ -7,27 +7,27 @@ body {
 }
 .loader-wrap {
   position: fixed;
-    width: 100%;
-    height: 100%;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: loader2 3000ms forwards;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loader2 3000ms forwards;
 
-    @keyframes loader2 {
-        from {
-            z-index: 9999;
-            opacity: 1;
-        }
-        90% {
-            opacity: 1;
-        }
-        to {
-            z-index: -1;
-            opacity: 0;
-        }
+  @keyframes loader2 {
+    from {
+      z-index: 9999;
+      opacity: 1;
     }
+    90% {
+      opacity: 1;
+    }
+    to {
+      z-index: -1;
+      opacity: 0;
+    }
+  }
 
   .loader {
     border: 16px solid #f3f3f3;
@@ -37,21 +37,19 @@ body {
     width: 100px;
     margin-bottom: 50%;
     margin-top: 50%;
-        background: white;
-        animation: loader-spinner 1000ms linear 3;
+    background: white;
+    animation: loader-spinner 1000ms linear 3;
 
-        @keyframes loader-spinner {
-            from {
-                transform: rotate(0);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
+    @keyframes loader-spinner {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
+  }
 }
-
-
 
 .logo {
   text-align: center;
@@ -87,7 +85,6 @@ body {
     }
   }
 }
-
 nav {
   flex-wrap: wrap;
   margin-left: 15px;
@@ -150,14 +147,12 @@ button.explorez-bt {
     box-shadow: 5px 5px 15px 0px rgb(20, 20, 20);
   }
 }
-
 main {
   background-color: #f3f3f3;
   padding: 24px;
   display: flex;
   flex-direction: column;
 }
-
 .cartes {
   a {
     text-decoration: none;
@@ -178,12 +173,10 @@ main {
     color: darkgreen;
     right: 20px;
   }
-
   .buttom {
     display: flex;
     justify-content: space-between;
     margin: 10px;
-
     i.far.fa-heart {
       align-self: center;
       padding-bottom: 10px;
@@ -238,4 +231,5 @@ footer {
     display: flex;
     width: 100%;
     justify-content: space-around;
-}}
+  }
+}

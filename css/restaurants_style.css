@@ -22,7 +22,7 @@ body {
   right: -30px;
   text-decoration: none;
   color: initial;
-  top: 45%;
+  top: 35%;
   font-size: x-large;
 }
 
@@ -321,5 +321,25 @@ footer h2 {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  .logo-icon img#logo {
+    width: 50%;
+    margin: 12px;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: 220px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-icon img#logo {
+    width: 50%;
+    margin: 12px;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: 120px;
+  }
 }
 /*# sourceMappingURL=restaurants_style.css.map */

@@ -9,26 +9,24 @@ body {
 .logo-icon {
   display: flex;
   background-color: white;
-  a{
+  a {
     .fa-arrow-left {
-        position: relative;
-        margin-right: 50px;
-        align-self: center;
-        right: -30px;
-    text-decoration: none;
-    color: initial;
-        top: 45%;
-    font-size: x-large;
-      }
-      }
-    img#logo {
-      width: 50%;
-      margin: 12px;
-      padding: 8px;
-      margin-bottom: 10px;
+      position: relative;
+      margin-right: 50px;
+      align-self: center;
+      right: -30px;
+      text-decoration: none;
+      color: initial;
+      top: 35%;
+      font-size: x-large;
     }
-  
-  
+  }
+  img#logo {
+    width: 50%;
+    margin: 12px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
 }
 .header-logo {
   display: -webkit-box;
@@ -105,7 +103,6 @@ main {
         i.fas.fa-check-circle {
           margin-top: 42%;
           display: none;
-          
         }
       }
       span {
@@ -148,14 +145,13 @@ main {
           animation: spin 0.5s linear forwards;
         }
         @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-      
-    }
-  }
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
       }
     }
   }
@@ -163,9 +159,9 @@ main {
   .restaurant-title {
     display: flex;
     justify-content: space-evenly;
-  
-     i.far.fa-heart {
-       position: relative;
+
+    i.far.fa-heart {
+      position: relative;
       align-self: center;
       padding-bottom: 10px;
       font-size: x-large;
@@ -220,5 +216,25 @@ footer {
     color: white;
   }
 }
-
-
+@media only screen and (min-width: 992px) {
+  .logo-icon {
+    img#logo {
+      width: 50%;
+      margin: 12px;
+      padding: 8px;
+      margin-bottom: 10px;
+      margin-left: 220px;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .logo-icon {
+    img#logo {
+      width: 50%;
+      margin: 12px;
+      padding: 8px;
+      margin-bottom: 10px;
+      margin-left: 120px;
+    }
+  }
+}
