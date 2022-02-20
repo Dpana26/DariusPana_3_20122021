@@ -6,6 +6,11 @@ body {
   margin: 0px;
   background-color: #f3f3f3;
 }
+.restaurant-title {
+  .titre-menu {
+    font-family: "Shrikhand", sans-serif;
+  }
+}
 .logo-icon {
   display: flex;
   background-color: white;
@@ -101,7 +106,7 @@ main {
         border-radius: 0 20px 20px 0;
         text-align: center;
         i.fas.fa-check-circle {
-          margin-top: 42%;
+          line-height: 77px;
           display: none;
         }
       }
@@ -139,7 +144,6 @@ main {
         width: 60px;
         i.fas.fa-check-circle {
           display: inherit;
-          margin-top: 42%;
           color: white;
           font-size: x-large;
           animation: spin 0.5s linear forwards;
